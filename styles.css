@@ -7,6 +7,7 @@
   --stream: #087b83;
   --graph: #2f6b4f;
   --vector: #b14832;
+  --compute: #475d78;
   --benchmark: #946600;
 }
 
@@ -96,11 +97,12 @@ h3 { margin-bottom: 10px; font-size: 22px; }
 .metrics dt { font-size: 26px; font-weight: 780; }
 .metrics dd { margin: 2px 0 0; color: var(--muted); }
 
-.domain-rail { display: grid; grid-template-columns: repeat(4, 1fr); min-height: 68px; }
-.domain { padding: 20px; color: var(--white); font-weight: 750; }
+.domain-rail { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); min-height: 68px; }
+.domain { min-width: 0; padding: 20px; overflow-wrap: anywhere; color: var(--white); font-weight: 750; }
 .domain.stream { background: var(--stream); }
 .domain.graph { background: var(--graph); }
 .domain.vector { background: var(--vector); }
+.domain.compute { background: var(--compute); }
 .domain.benchmark { background: var(--benchmark); }
 
 .project-section, .ecosystem, .graduation { padding: 96px 5vw; }
@@ -180,7 +182,7 @@ footer div { display: flex; gap: 22px; }
   .overview { min-height: 620px; padding-top: 72px; }
   .metrics { grid-template-columns: 1fr; }
   .metrics div + div { padding-left: 0; border-left: 0; border-top: 1px solid var(--line); }
-  .domain-rail { grid-template-columns: 1fr 1fr; }
+  .domain-rail { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .project-section, .ecosystem, .graduation { padding-top: 68px; padding-bottom: 68px; }
   .project-grid { grid-template-columns: 1fr; }
   .project, .project.flagship { min-height: 230px; }
