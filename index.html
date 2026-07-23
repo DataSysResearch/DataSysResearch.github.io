@@ -5,163 +5,161 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="DataSys develops open-source systems for continuously evolving data.">
   <meta property="og:url" content="https://datasys.sage.org.ai/">
+  <meta property="og:image" content="https://datasys.sage.org.ai/assets/ecosystem-infrastructure.png">
   <title>DataSys | Systems for Evolving Data</title>
   <link rel="canonical" href="https://datasys.sage.org.ai/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="portal portal-datasys">
   <header class="site-header">
     <a class="brand" href="#top" aria-label="DataSys home">
       <span class="brand-mark" aria-hidden="true">D</span>
       <span>DataSys</span>
+      <small>Data layer</small>
     </a>
     <nav aria-label="Primary navigation">
-      <a href="#projects">Projects</a>
+      <a href="#flagships">Flagships</a>
+      <a href="#directory">Repository atlas</a>
       <a href="#ecosystem">Ecosystem</a>
-      <a href="#graduation">Graduation</a>
-      <a class="github-link" href="https://github.com/DataSysResearch">GitHub</a>
+      <a class="nav-action" href="https://github.com/DataSysResearch">GitHub <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
 
   <main id="top">
-    <section class="overview" aria-labelledby="page-title">
-      <div class="overview-copy">
-        <p class="eyebrow">Open-source data systems</p>
+    <section class="hero" aria-labelledby="page-title">
+      <img class="hero-media" src="assets/ecosystem-infrastructure.png" alt="" width="1944" height="809">
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <p class="signal"><span></span> Intelligent systems ecosystem / 02</p>
         <h1 id="page-title">DataSys</h1>
-        <p class="lede">Data management and processing for continuously evolving data: streams, dynamic graphs, vectors, online indexes, queries, and reproducible benchmarks.</p>
+        <p class="hero-kicker">Systems for data that never stands still.</p>
+        <p class="hero-summary">Streams, dynamic graphs, vector indexes, online updates, queries, lifecycle, and reproducible systems evaluation.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#directory">Explore repositories <span aria-hidden="true">↓</span></a>
+          <a class="button button-quiet" href="https://github.com/DataSysResearch">Open GitHub <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
-      <dl class="metrics" aria-label="Organization overview">
-        <div><dt>18</dt><dd>maintained projects</dd></div>
-        <div><dt>6</dt><dd>baseline forks</dd></div>
-        <div><dt>5</dt><dd>technical pillars</dd></div>
-        <div><dt>Open</dt><dd>research infrastructure</dd></div>
+      <dl class="hero-metrics" aria-label="Organization overview">
+        <div><dt>18</dt><dd>maintained</dd></div>
+        <div><dt>06</dt><dd>baseline forks</dd></div>
+        <div><dt>05</dt><dd>technical pillars</dd></div>
       </dl>
-      <div class="domain-rail" aria-label="DataSys technical scope">
-        <span class="domain stream">Streams</span>
-        <span class="domain graph">Dynamic graphs</span>
-        <span class="domain vector">Vector and ANNS</span>
-        <span class="domain compute">Approximate computing</span>
-        <span class="domain benchmark">Benchmarks</span>
-      </div>
     </section>
 
-    <section class="project-section" id="projects" aria-labelledby="projects-title">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">Project directory</p>
-          <h2 id="projects-title">Systems and benchmarks</h2>
-        </div>
-        <div class="filters" role="group" aria-label="Filter projects">
-          <button class="filter active" type="button" data-filter="all" aria-pressed="true">All</button>
-          <button class="filter" type="button" data-filter="stream" aria-pressed="false">Stream</button>
-          <button class="filter" type="button" data-filter="graph" aria-pressed="false">Graph</button>
-          <button class="filter" type="button" data-filter="vector" aria-pressed="false">Vector</button>
-          <button class="filter" type="button" data-filter="compute" aria-pressed="false">Approximate</button>
-          <button class="filter" type="button" data-filter="benchmark" aria-pressed="false">Benchmark</button>
-        </div>
-      </div>
+    <section class="scope-rail" aria-label="DataSys technical scope">
+      <span data-code="01">Stream systems</span>
+      <span data-code="02">Dynamic graphs</span>
+      <span data-code="03">Vector + ANNS</span>
+      <span data-code="04">Approximate compute</span>
+      <span data-code="05">Benchmarks</span>
+    </section>
 
-      <div class="project-grid" aria-live="polite">
-        <article class="project flagship" data-categories="stream">
-          <div class="project-topline">
-            <img src="assets/morphstream-logo.png" alt="MorphStream logo" width="48" height="48">
-            <span class="status">Flagship</span>
-          </div>
+    <section class="section section-dark" id="flagships">
+      <div class="section-head">
+        <div><p class="eyebrow">Flagship systems</p><h2>Four views of evolving data.</h2></div>
+        <p>Each flagship owns a distinct systems boundary. Supporting repositories appear in the atlas below.</p>
+      </div>
+      <div class="flagship-grid">
+        <a class="flagship" href="https://github.com/DataSysResearch/MorphStream">
+          <span class="index">01 / STREAM</span>
+          <div class="flagship-mark"><img src="assets/morphstream-logo.png" alt="" width="50" height="50"></div>
           <h3>MorphStream</h3>
-          <p>Transactional stream-processing engine for ACID transactions over streaming data.</p>
-          <a href="https://github.com/DataSysResearch/MorphStream">Open repository</a>
-        </article>
-        <article class="project flagship" data-categories="vector benchmark">
-          <div class="project-topline"><span class="project-mark vector-mark">CB</span><span class="status">Flagship</span></div>
+          <p>Transactional stream processing with ACID semantics over continuously arriving data.</p>
+          <span class="open">Repository ↗</span>
+        </a>
+        <a class="flagship" href="https://github.com/DataSysResearch/CANDOR-Bench">
+          <span class="index">02 / VECTOR</span>
+          <div class="flagship-mark">CB</div>
           <h3>CANDOR-Bench</h3>
-          <p>Continuous ANNS evaluation under dynamic, open-world streams.</p>
-          <a href="https://github.com/DataSysResearch/CANDOR-Bench">Open repository</a>
-        </article>
-        <article class="project flagship" data-categories="graph">
-          <div class="project-topline"><span class="project-mark graph-mark">GR</span><span class="status">Flagship</span></div>
+          <p>Continuous ANNS evaluation under dynamic, open-world data streams.</p>
+          <span class="open">Repository ↗</span>
+        </a>
+        <a class="flagship" href="https://github.com/DataSysResearch/GRACE">
+          <span class="index">03 / GRAPH</span>
+          <div class="flagship-mark">GR</div>
           <h3>GRACE</h3>
-          <p>Dynamic graph processing for continuously evolving graph data.</p>
-          <a href="https://github.com/DataSysResearch/GRACE">Open repository</a>
-        </article>
-        <article class="project flagship" data-categories="stream benchmark">
-          <div class="project-topline"><span class="project-mark benchmark-mark">SE</span><span class="status">Flagship</span></div>
+          <p>Graph processing designed around topology that changes while computation runs.</p>
+          <span class="open">Repository ↗</span>
+        </a>
+        <a class="flagship" href="https://github.com/DataSysResearch/Sesame">
+          <span class="index">04 / CLUSTER</span>
+          <div class="flagship-mark">SE</div>
           <h3>Sesame</h3>
-          <p>Data-stream clustering system and reproducible benchmark.</p>
-          <a href="https://github.com/DataSysResearch/Sesame">Open repository</a>
-        </article>
-        <article class="project" data-categories="vector benchmark">
-          <h3>vasg</h3>
-          <p>DataSys-maintained VSAG derivative used by CANDOR-Bench for reproducible vector-index evaluation.</p>
-          <a href="https://github.com/DataSysResearch/vasg">Open repository</a>
-        </article>
-        <article class="project" data-categories="compute">
-          <h3>AMM-Algorithms</h3>
-          <p>Framework-neutral C++ implementations of approximate matrix multiplication algorithms with Python bindings.</p>
-          <a href="https://github.com/DataSysResearch/AMM-Algorithms">Open repository</a>
-        </article>
-        <article class="project" data-categories="compute benchmark">
-          <h3>LibAMM</h3>
-          <p>Reproducible benchmark suite for approximate matrix multiplication systems.</p>
-          <a href="https://github.com/DataSysResearch/LibAMM">Open repository</a>
-        </article>
-        <article class="project" data-categories="stream"><h3>AllianceDB</h3><p>Research infrastructure for modern data processing.</p><a href="https://github.com/DataSysResearch/AllianceDB">Open repository</a></article>
-        <article class="project" data-categories="stream"><h3>CStream</h3><p>Stream-processing system and research artifact.</p><a href="https://github.com/DataSysResearch/CStream">Open repository</a></article>
-        <article class="project" data-categories="stream benchmark"><h3>PECJ</h3><p>Parallel and evolving-data processing research system.</p><a href="https://github.com/DataSysResearch/PECJ">Open repository</a></article>
-        <article class="project" data-categories="stream"><h3>PDSC</h3><p>Data-stream processing research infrastructure.</p><a href="https://github.com/DataSysResearch/PDSC">Open repository</a></article>
-        <article class="project" data-categories="benchmark"><h3>CFInjectBench</h3><p>Benchmark tooling for reproducible systems evaluation.</p><a href="https://github.com/DataSysResearch/CFInjectBench">Open repository</a></article>
-        <article class="project" data-categories="benchmark"><h3>CC-bench-tools</h3><p>Utilities supporting concurrency-control benchmarks.</p><a href="https://github.com/DataSysResearch/CC-bench-tools">Open repository</a></article>
-        <article class="project" data-categories="stream benchmark"><h3>SentiStream</h3><p>Streaming sentiment analysis system and evaluation artifact.</p><a href="https://github.com/DataSysResearch/SentiStream">Open repository</a></article>
-        <article class="project" data-categories="stream"><h3>StreamFP</h3><p>Research system for continuously processed data.</p><a href="https://github.com/DataSysResearch/StreamFP">Open repository</a></article>
-        <article class="project" data-categories="stream"><h3>SRTFD</h3><p>Streaming research implementation and experimental artifact.</p><a href="https://github.com/DataSysResearch/SRTFD">Open repository</a></article>
-        <article class="project" data-categories="stream benchmark"><h3>Stream Processing Reading List</h3><p>Community-maintained references for stream-processing research.</p><a href="https://github.com/DataSysResearch/StreamProcessing_ReadingList">Open repository</a></article>
-        <article class="project" data-categories="stream benchmark"><h3>State Management Survey</h3><p>Research resources for parallel and distributed state management.</p><a href="https://github.com/DataSysResearch/parallel-distributed-state-management-survey">Open repository</a></article>
+          <p>Modular stream-clustering systems and reproducible empirical evaluation.</p>
+          <span class="open">Repository ↗</span>
+        </a>
       </div>
     </section>
 
-    <section class="baseline-section" id="baselines" aria-labelledby="baselines-title">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">Evaluation dependencies</p>
-          <h2 id="baselines-title">ANNS baseline forks</h2>
-        </div>
-        <p class="section-note">Preserved for reproducible DataSys evaluation with upstream authorship and fork history intact.</p>
+    <section class="section directory" id="directory">
+      <div class="section-head">
+        <div><p class="eyebrow">Repository atlas</p><h2>Organized by technical role.</h2></div>
+        <p>Filter maintained systems, evaluation infrastructure, and research resources without flattening them into one list.</p>
       </div>
-      <div class="baseline-list">
-        <a href="https://github.com/DataSysResearch/Parlay-HNSW"><strong>Parlay-HNSW</strong><span>ParlayANN-derived HNSW baseline</span></a>
-        <a href="https://github.com/DataSysResearch/Concurrent-HNSW"><strong>Concurrent-HNSW</strong><span>Concurrent hnswlib baseline</span></a>
-        <a href="https://github.com/DataSysResearch/hnswlib"><strong>hnswlib</strong><span>Pinned upstream snapshot</span></a>
-        <a href="https://github.com/DataSysResearch/cufe"><strong>cufe</strong><span>CANDOR DiskANN research fork</span></a>
-        <a href="https://github.com/DataSysResearch/IP-DiskANN"><strong>IP-DiskANN</strong><span>CANDOR pinned baseline</span></a>
-        <a href="https://github.com/DataSysResearch/big-ann-benchmarks"><strong>big-ann-benchmarks</strong><span>Billion-scale evaluation framework</span></a>
+      <div class="filterbar" role="group" aria-label="Filter repositories">
+        <button class="filter active" type="button" data-filter="all" aria-pressed="true">All <span>18</span></button>
+        <button class="filter" type="button" data-filter="stream" aria-pressed="false">Streams</button>
+        <button class="filter" type="button" data-filter="graph" aria-pressed="false">Graphs</button>
+        <button class="filter" type="button" data-filter="vector" aria-pressed="false">Vector</button>
+        <button class="filter" type="button" data-filter="compute" aria-pressed="false">AMM</button>
+        <button class="filter" type="button" data-filter="benchmark" aria-pressed="false">Benchmarks</button>
+        <button class="filter" type="button" data-filter="resource" aria-pressed="false">Resources</button>
+      </div>
+      <div class="repo-list" aria-live="polite">
+        <a class="repo-row" data-categories="stream" href="https://github.com/DataSysResearch/MorphStream"><span class="repo-name">MorphStream</span><span class="repo-role">Transactional stream engine</span><span class="tag">flagship</span><span class="arrow">↗</span></a>
+        <a class="repo-row" data-categories="vector benchmark" href="https://github.com/DataSysResearch/CANDOR-Bench"><span class="repo-name">CANDOR-Bench</span><span class="repo-role">Continuous ANNS benchmark</span><span class="tag">flagship</span><span class="arrow">↗</span></a>
+        <a class="repo-row" data-categories="graph" href="https://github.com/DataSysResearch/GRACE"><span class="repo-name">GRACE</span><span class="repo-role">Dynamic graph processing</span><span class="tag">flagship</span><span class="arrow">↗</span></a>
+        <a class="repo-row" data-categories="stream benchmark" href="https://github.com/DataSysResearch/Sesame"><span class="repo-name">Sesame</span><span class="repo-role">Stream clustering system</span><span class="tag">flagship</span><span class="arrow">↗</span></a>
+        <a class="repo-row" data-categories="vector benchmark" href="https://github.com/DataSysResearch/vasg"><span class="repo-name">vasg</span><span class="repo-role">CANDOR vector-index derivative</span><span class="tag tag-green">maintained</span><span class="arrow">↗</span></a>
+        <a class="repo-row" data-categories="compute" href="https://github.com/DataSysResearch/AMM-Algorithms"><span class="repo-name">AMM-Algorithms</span><span class="repo-role">Framework-neutral AMM library</span><span class="tag tag-green">library</span><span class="arrow">↗</span></a>
+        <a class="repo-row" data-categories="compute benchmark" href="https://github.com/DataSysResearch/LibAMM"><span class="repo-name">LibAMM</span><span class="repo-role">Approximate matrix benchmark</span><span class="tag tag-amber">benchmark</span><span class="arrow">↗</span></a>
+        <a class="repo-row" data-categories="stream" href="https://github.com/DataSysResearch/AllianceDB"><span class="repo-name">AllianceDB</span><span class="repo-role">Modern data processing research</span><span class="tag tag-green">system</span><span class="arrow">↗</span></a>
+        <a class="repo-row" data-categories="stream" href="https://github.com/DataSysResearch/CStream"><span class="repo-name">CStream</span><span class="repo-role">Stream-processing artifact</span><span class="tag">research</span><span class="arrow">↗</span></a>
+        <a class="repo-row" data-categories="stream" href="https://github.com/DataSysResearch/PECJ"><span class="repo-name">PECJ</span><span class="repo-role">Out-of-order stream join</span><span class="tag">operator</span><span class="arrow">↗</span></a>
+        <a class="repo-row" data-categories="stream benchmark" href="https://github.com/DataSysResearch/PDSC"><span class="repo-name">PDSC</span><span class="repo-role">Parallel stream clustering</span><span class="tag tag-amber">benchmark</span><span class="arrow">↗</span></a>
+        <a class="repo-row" data-categories="benchmark" href="https://github.com/DataSysResearch/CFInjectBench"><span class="repo-name">CFInjectBench</span><span class="repo-role">Fault-injection evaluation</span><span class="tag tag-amber">benchmark</span><span class="arrow">↗</span></a>
+        <a class="repo-row" data-categories="vector benchmark" href="https://github.com/DataSysResearch/CC-bench-tools"><span class="repo-name">CC-bench-tools</span><span class="repo-role">Concurrent graph-ANNS tooling</span><span class="tag tag-amber">tooling</span><span class="arrow">↗</span></a>
+        <a class="repo-row" data-categories="stream benchmark" href="https://github.com/DataSysResearch/SentiStream"><span class="repo-name">SentiStream</span><span class="repo-role">Streaming sentiment system</span><span class="tag">research</span><span class="arrow">↗</span></a>
+        <a class="repo-row" data-categories="stream" href="https://github.com/DataSysResearch/StreamFP"><span class="repo-name">StreamFP</span><span class="repo-role">Continuous processing research</span><span class="tag">research</span><span class="arrow">↗</span></a>
+        <a class="repo-row" data-categories="stream" href="https://github.com/DataSysResearch/SRTFD"><span class="repo-name">SRTFD</span><span class="repo-role">Streaming research artifact</span><span class="tag">research</span><span class="arrow">↗</span></a>
+        <a class="repo-row" data-categories="resource stream" href="https://github.com/DataSysResearch/StreamProcessing_ReadingList"><span class="repo-name">Stream Processing Reading List</span><span class="repo-role">Curated community references</span><span class="tag tag-cyan">resource</span><span class="arrow">↗</span></a>
+        <a class="repo-row" data-categories="resource stream" href="https://github.com/DataSysResearch/parallel-distributed-state-management-survey"><span class="repo-name">State Management Survey</span><span class="repo-role">Parallel and distributed state research</span><span class="tag tag-cyan">resource</span><span class="arrow">↗</span></a>
       </div>
     </section>
 
-    <section class="ecosystem" id="ecosystem" aria-labelledby="ecosystem-title">
-      <div class="section-heading">
-        <div><p class="eyebrow">Layered ecosystem</p><h2 id="ecosystem-title">From research idea to execution</h2></div>
+    <section class="section baselines" id="baselines">
+      <div class="section-head">
+        <div><p class="eyebrow">Evaluation dependencies</p><h2>Upstream baseline network.</h2></div>
+        <p>Fork history and upstream authorship stay explicit. These repositories support reproducibility; they are not presented as DataSys-authored systems.</p>
       </div>
-      <div class="layers">
-        <a href="https://github.com/intellistream"><strong>IntelliStream</strong><span>Research incubator spanning every layer</span></a>
-        <a href="https://github.com/SAGE-Research"><strong>SAGE</strong><span>Agent, RAG, workflow, and service orchestration</span></a>
-        <a class="current" href="https://github.com/DataSysResearch"><strong>DataSys</strong><span>Streams, graphs, vectors, indexes, updates, and queries</span></a>
-        <a href="https://github.com/vllm-hust"><strong>vLLM-HUST</strong><span>Model runtime, scheduling, kernels, and hardware execution</span></a>
+      <div class="baseline-grid">
+        <a href="https://github.com/DataSysResearch/Parlay-HNSW"><strong>Parlay-HNSW</strong><span>ParlayANN source network</span><em>HNSW</em></a>
+        <a href="https://github.com/DataSysResearch/Concurrent-HNSW"><strong>Concurrent-HNSW</strong><span>hnswlib source network</span><em>HNSW</em></a>
+        <a href="https://github.com/DataSysResearch/hnswlib"><strong>hnswlib</strong><span>nmslib upstream snapshot</span><em>HNSW</em></a>
+        <a href="https://github.com/DataSysResearch/cufe"><strong>cufe</strong><span>Microsoft DiskANN source network</span><em>DiskANN</em></a>
+        <a href="https://github.com/DataSysResearch/IP-DiskANN"><strong>IP-DiskANN</strong><span>CANDOR pinned dependency</span><em>DiskANN</em></a>
+        <a href="https://github.com/DataSysResearch/big-ann-benchmarks"><strong>big-ann-benchmarks</strong><span>Billion-scale evaluation</span><em>Benchmark</em></a>
       </div>
     </section>
 
-    <section class="graduation" id="graduation" aria-labelledby="graduation-title">
-      <div>
-        <p class="eyebrow">Project graduation</p>
-        <h2 id="graduation-title">Stable boundaries earn durable homes.</h2>
+    <section class="section ecosystem" id="ecosystem">
+      <div class="section-head">
+        <div><p class="eyebrow">Shared architecture</p><h2>One ecosystem. Clear ownership.</h2></div>
+        <p>IntelliStream incubates across layers. Mature projects graduate to the organization that owns their durable technical boundary.</p>
       </div>
-      <p>Projects graduate from IntelliStream when they have a clear public abstraction, named maintainers, reproducible evaluation, documentation, tests, licensing, and a sustainable release path.</p>
-      <a class="primary-action" href="https://github.com/DataSysResearch/.github/blob/main/CONTRIBUTING.md">Contribution guide</a>
+      <div class="architecture">
+        <a href="https://lab.sage.org.ai/"><span>00</span><strong>IntelliStream</strong><small>Cross-layer research incubator</small></a>
+        <a href="https://sage.org.ai/"><span>01</span><strong>SAGE</strong><small>Applications, agents, RAG, workflows</small></a>
+        <a class="active" href="#top"><span>02</span><strong>DataSys</strong><small>Streams, graphs, vectors, indexes</small></a>
+        <a href="https://github.com/vllm-hust"><span>03</span><strong>vLLM-HUST</strong><small>Runtime, scheduling, kernels, hardware</small></a>
+      </div>
     </section>
   </main>
 
   <footer>
-    <span>DataSys</span>
-    <div><a href="https://github.com/DataSysResearch">GitHub</a><a href="https://github.com/DataSysResearch/.github/blob/main/SECURITY.md">Security</a><a href="https://github.com/DataSysResearch/.github/blob/main/SUPPORT.md">Support</a></div>
+    <div><strong>DataSys</strong><span>Open systems for evolving data.</span></div>
+    <nav aria-label="Footer navigation"><a href="https://github.com/DataSysResearch">GitHub</a><a href="https://github.com/DataSysResearch/.github/blob/main/SECURITY.md">Security</a><a href="https://github.com/DataSysResearch/.github/blob/main/CONTRIBUTING.md">Contribute</a></nav>
   </footer>
   <script src="app.js"></script>
 </body>

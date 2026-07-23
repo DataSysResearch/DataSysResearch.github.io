@@ -1,19 +1,19 @@
 const filters = document.querySelectorAll(".filter");
-const projects = document.querySelectorAll(".project");
+const repositories = document.querySelectorAll(".repo-row");
 
 filters.forEach((button) => {
   button.addEventListener("click", () => {
     const selected = button.dataset.filter;
 
     filters.forEach((filter) => {
-      const isActive = filter === button;
-      filter.classList.toggle("active", isActive);
-      filter.setAttribute("aria-pressed", String(isActive));
+      const active = filter === button;
+      filter.classList.toggle("active", active);
+      filter.setAttribute("aria-pressed", String(active));
     });
 
-    projects.forEach((project) => {
-      const categories = project.dataset.categories.split(" ");
-      project.hidden = selected !== "all" && !categories.includes(selected);
+    repositories.forEach((repository) => {
+      const categories = repository.dataset.categories.split(" ");
+      repository.hidden = selected !== "all" && !categories.includes(selected);
     });
   });
 });
