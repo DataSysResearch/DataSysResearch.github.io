@@ -3,24 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Accepted papers, demonstrations, and systems artifacts from DataSys.">
+  <meta name="description" content="Formally accepted and published DataSys papers and demonstrations.">
   <meta property="og:url" content="https://datasys.sage.org.ai/achievements.html">
-  <title>Achievements | DataSys</title>
+  <title>Publications | DataSys</title>
   <link rel="canonical" href="https://datasys.sage.org.ai/achievements.html">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20260723">
+  <link rel="stylesheet" href="styles.css?v=publication-timeline-20260723">
 </head>
 <body class="portal portal-datasys">
   <header class="site-header">
     <a class="brand" href="./index.html" aria-label="DataSys home">
       <span class="brand-mark" aria-hidden="true">D</span>
       <span>DataSys</span>
-      <small>Data layer</small>
+      <small data-en="Data layer" data-zh="数据系统层">Data layer</small>
     </a>
     <nav aria-label="Primary navigation">
-      <a href="./index.html#flagships">Flagships</a>
-      <a href="./achievements.html" aria-current="page">Achievements</a>
-      <a href="./index.html#directory">Repository atlas</a>
+      <a href="./index.html#flagships" data-en="Flagships" data-zh="旗舰项目">Flagships</a>
+      <a href="./achievements.html" aria-current="page" data-en="Publications" data-zh="发表成果">Publications</a>
+      <a href="./index.html#directory" data-en="Repository atlas" data-zh="仓库图谱">Repository atlas</a>
+      <button id="language-toggle" class="language-toggle" type="button" aria-label="切换为中文">中文</button>
       <a class="nav-action" href="https://github.com/DataSysResearch">GitHub <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
@@ -28,37 +29,29 @@
   <main>
     <section class="page-hero">
       <div class="page-hero-copy">
-        <p class="signal"><span></span> DataSys research output</p>
-        <h1>Achievements</h1>
-        <p>Accepted systems work, live demonstrations, and reproducible artifacts rooted in continuously evolving data.</p>
+        <p class="signal"><span></span> <span data-en="DataSys research output" data-zh="DataSys 研究成果">DataSys research output</span></p>
+        <h1 data-en="Publications" data-zh="发表成果">Publications</h1>
+        <p data-en="Formally accepted papers and demonstrations in stream, graph, vector, index, and continuously evolving data systems." data-zh="面向流、动态图、向量索引与持续演化数据系统的正式发表论文和已接收演示成果。">Formally accepted papers and demonstrations in stream, graph, vector, index, and continuously evolving data systems.</p>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section publication-section">
       <div class="section-head">
-        <div><p class="eyebrow">2026</p><h2>Systems that make evolving state inspectable.</h2></div>
-        <p>Entries distinguish accepted work from formally published proceedings. Links are added when public artifacts are ready.</p>
+        <div>
+          <p class="eyebrow" data-en="Publication line" data-zh="成果发布线">Publication line</p>
+          <h2 data-en="Systems that make evolving data tractable." data-zh="让持续演化的数据可管理、可查询、可复现。">Systems that make evolving data tractable.</h2>
+        </div>
+        <p data-en="Only formally accepted or published work appears here. Repository links point to the corresponding maintained DataSys project." data-zh="本页只展示已正式接收或发表的成果；仓库链接指向对应的 DataSys 维护项目。">Only formally accepted or published work appears here. Repository links point to the corresponding maintained DataSys project.</p>
       </div>
-      <div class="achievement-list">
-        <article class="achievement-entry">
-          <div class="achievement-meta">ICPP 2026<br>Demo track</div>
-          <div class="achievement-copy">
-            <h2>BriskSnapshot: A Live Demo of Join-Backed Semantic Windows for Streaming AI Pipelines</h2>
-            <p><strong>Ziao Wang</strong> and <strong>Shuhao Zhang</strong></p>
-            <p>BriskSnapshot demonstrates how BriskFlow maintains runtime-owned semantic windows and exposes bounded evidence to streaming AI applications.</p>
-            <div class="achievement-links">
-              <a href="https://github.com/DataSysResearch/BriskFlow">BriskFlow core ↗</a>
-            </div>
-          </div>
-          <div class="achievement-status"><span>Accepted demo</span></div>
-        </article>
-      </div>
+      <div id="publication-release-line" class="publication-release-line" aria-label="Publication timeline"></div>
+      <div id="publication-years" class="publication-years"></div>
     </section>
   </main>
 
   <footer>
-    <div><strong>DataSys</strong><span>Open systems for evolving data.</span></div>
-    <nav aria-label="Footer navigation"><a href="./index.html">Home</a><a href="https://github.com/DataSysResearch">GitHub</a><a href="https://github.com/DataSysResearch/.github/blob/main/CONTRIBUTING.md">Contribute</a></nav>
+    <div><strong>DataSys</strong><span data-en="Open systems for evolving data." data-zh="面向持续演化数据的开放系统。">Open systems for evolving data.</span></div>
+    <nav aria-label="Footer navigation"><a href="./index.html" data-en="Home" data-zh="首页">Home</a><a href="https://github.com/DataSysResearch">GitHub</a><a href="https://github.com/DataSysResearch/.github/blob/main/CONTRIBUTING.md" data-en="Contribute" data-zh="参与贡献">Contribute</a></nav>
   </footer>
+  <script src="achievements.js?v=published-only-20260723"></script>
 </body>
 </html>
