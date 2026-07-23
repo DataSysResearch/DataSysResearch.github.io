@@ -88,7 +88,7 @@ h3 { margin-bottom: 10px; font-size: 22px; }
 .metrics {
   margin: 64px 0 42px;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -105,8 +105,9 @@ h3 { margin-bottom: 10px; font-size: 22px; }
 .domain.compute { background: var(--compute); }
 .domain.benchmark { background: var(--benchmark); }
 
-.project-section, .ecosystem, .graduation { padding: 96px 5vw; }
+.project-section, .baseline-section, .ecosystem, .graduation { padding: 96px 5vw; }
 .project-section { background: var(--paper); }
+.baseline-section { background: var(--white); border-top: 1px solid var(--line); }
 .section-heading { margin-bottom: 38px; display: flex; align-items: end; justify-content: space-between; gap: 32px; }
 .filters { display: flex; gap: 6px; flex-wrap: wrap; }
 .filter {
@@ -148,6 +149,12 @@ h3 { margin-bottom: 10px; font-size: 22px; }
 .project p { margin: 0 0 28px; color: var(--muted); }
 .project a { margin-top: auto; font-weight: 750; }
 
+.section-note { margin: 0; max-width: 500px; color: var(--muted); }
+.baseline-list { border-top: 1px solid var(--line); }
+.baseline-list a { min-height: 76px; padding: 18px 0; display: grid; grid-template-columns: minmax(180px, 1fr) 2fr; gap: 24px; align-items: center; border-bottom: 1px solid var(--line); text-decoration: none; }
+.baseline-list a:hover strong, .baseline-list a:focus-visible strong { color: var(--stream); }
+.baseline-list span { color: var(--muted); }
+
 .ecosystem { color: var(--white); background: var(--ink); }
 .ecosystem .eyebrow { color: #70d2d0; }
 .layers { margin-top: 48px; border-top: 1px solid #506064; }
@@ -183,10 +190,11 @@ footer div { display: flex; gap: 22px; }
   .metrics { grid-template-columns: 1fr; }
   .metrics div + div { padding-left: 0; border-left: 0; border-top: 1px solid var(--line); }
   .domain-rail { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .project-section, .ecosystem, .graduation { padding-top: 68px; padding-bottom: 68px; }
+  .project-section, .baseline-section, .ecosystem, .graduation { padding-top: 68px; padding-bottom: 68px; }
   .project-grid { grid-template-columns: 1fr; }
   .project, .project.flagship { min-height: 230px; }
   .layers a { grid-template-columns: 1fr; gap: 6px; }
+  .baseline-list a { grid-template-columns: 1fr; gap: 4px; }
   footer { align-items: flex-start; flex-direction: column; }
 }
 
