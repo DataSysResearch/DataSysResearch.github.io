@@ -73,6 +73,29 @@ h1 { margin: 0; font-size: clamp(72px, 11vw, 166px); line-height: .82; }
 .section-head > p { margin: 0; color: var(--muted); font-size: 17px; }
 .section-dark .section-head > p, .ecosystem .section-head > p { color: #a9b8b6; }
 
+.page-hero {
+  min-height: 520px;
+  padding: 150px max(4vw, calc((100vw - var(--max)) / 2)) 72px;
+  display: flex;
+  align-items: end;
+  color: var(--white);
+  background:
+    linear-gradient(90deg, rgba(7,11,12,.98), rgba(7,11,12,.72)),
+    url("assets/ecosystem-infrastructure.png") center / cover;
+}
+.page-hero-copy { max-width: 920px; }
+.page-hero h1 { margin: 0; font-size: clamp(58px, 9vw, 126px); line-height: .88; }
+.page-hero p:last-child { max-width: 720px; color: #c4d0cf; font-size: 19px; }
+.achievement-list { border-top: 1px solid var(--line); }
+.achievement-entry { display: grid; grid-template-columns: 160px minmax(0, 1fr) 190px; gap: 32px; padding: 34px 0; border-bottom: 1px solid var(--line); }
+.achievement-meta { color: var(--muted); font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; text-transform: uppercase; }
+.achievement-copy h2 { margin: 0 0 12px; max-width: 980px; font-size: clamp(28px, 4vw, 52px); line-height: 1.04; }
+.achievement-copy p { margin: 8px 0 0; color: var(--muted); }
+.achievement-status { justify-self: end; }
+.achievement-status span { display: inline-flex; padding: 8px 10px; border: 1px solid #87a43e; border-radius: 3px; color: #33470b; background: #dff1b9; font-size: 12px; font-weight: 850; text-transform: uppercase; }
+.achievement-links { margin-top: 20px; display: flex; gap: 16px; flex-wrap: wrap; }
+.achievement-links a { font-weight: 800; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+
 .flagship-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); border-top: 1px solid var(--dark-line); border-left: 1px solid var(--dark-line); }
 .flagship { min-height: 410px; padding: 24px; display: flex; flex-direction: column; border-right: 1px solid var(--dark-line); border-bottom: 1px solid var(--dark-line); text-decoration: none; transition: background .2s ease; }
 .flagship:hover { background: #172222; }
@@ -143,6 +166,8 @@ footer span, footer nav { color: #82918f; }
   .hero-media { object-position: 62% center; }
   .hero-shade { background: rgba(7,11,12,.72); }
   h1 { font-size: 68px; }
+  .page-hero-copy { width: auto; max-width: calc(100vw - 32px); min-width: 0; }
+  .page-hero h1 { font-size: 54px; }
   .hero-kicker { font-size: 27px; }
   .hero-summary { font-size: 16px; }
   .hero-metrics { grid-template-columns: repeat(3,minmax(0,1fr)); }
@@ -160,6 +185,8 @@ footer span, footer nav { color: #82918f; }
   .repo-role { grid-column: 1 / -1; grid-row: 2; }
   .repo-row .tag { grid-column: 1; grid-row: 3; }
   .repo-row .arrow { grid-column: 2; grid-row: 1; }
+  .achievement-entry { grid-template-columns: 1fr; gap: 14px; }
+  .achievement-status { justify-self: start; }
   footer { align-items: flex-start; flex-direction: column; }
   footer > div { align-items: flex-start; flex-direction: column; gap: 4px; }
 }
