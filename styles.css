@@ -42,8 +42,17 @@ button, input { font: inherit; }
 .mobile-nav { display: none; }
 
 .hero { position: relative; min-height: min(820px, 88svh); padding: 140px max(4vw, calc((100vw - var(--max)) / 2)) 54px; display: grid; align-items: end; overflow: hidden; color: var(--white); background: var(--ink); }
-.hero-media { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
-.hero-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(7,11,12,.98) 0%, rgba(7,11,12,.82) 34%, rgba(7,11,12,.16) 72%, rgba(7,11,12,.42) 100%); }
+.hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 82% 38%, #24362a 0, #12201b 30%, var(--ink) 68%); }
+.dataflow-visual { position: absolute; inset: 0 0 0 34%; opacity: .92; }
+.dataflow-visual svg { width: 100%; height: 100%; }
+.dataflow-grid path { fill: none; stroke: #83a38f; stroke-width: 1; opacity: .1; }
+.dataflow-stream { fill: none; stroke-width: 2.5; filter: drop-shadow(0 0 7px rgba(168,217,81,.24)); }
+.dataflow-stream.stream-b { opacity: .76; }
+.dataflow-stream.stream-c path { stroke: #587a68; opacity: .56; stroke-dasharray: 4 11; }
+.dataflow-pulses circle, .dataflow-pulses rect { fill: var(--green); stroke: rgba(168,217,81,.22); stroke-width: 13; }
+.dataflow-pulses rect { fill: var(--cyan); stroke: rgba(57,198,202,.2); }
+.dataflow-labels { fill: #bbcbc1; font: 700 12px ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 1.2px; }
+.hero-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(7,11,12,.99) 0%, rgba(7,11,12,.9) 38%, rgba(7,11,12,.2) 73%, rgba(7,11,12,.38) 100%); }
 .hero-copy { position: relative; z-index: 2; max-width: 760px; }
 .signal, .eyebrow { margin: 0 0 18px; color: var(--green); font-size: 12px; font-weight: 850; text-transform: uppercase; }
 .signal { display: flex; align-items: center; gap: 10px; }
@@ -213,7 +222,7 @@ footer span, footer nav { color: #82918f; }
   .mobile-nav { top: 64px; }
   .brand small { display: none; }
   .hero { min-height: 820px; padding-top: 112px; }
-  .hero-media { object-position: 62% center; }
+  .dataflow-visual { left: 19%; opacity: .52; }
   .hero-shade { background: rgba(7,11,12,.72); }
   h1 { font-size: 68px; }
   .page-hero-copy { width: auto; max-width: calc(100vw - 32px); min-width: 0; }

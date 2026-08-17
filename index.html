@@ -35,7 +35,23 @@
 
   <main id="top">
     <section class="hero" aria-labelledby="page-title">
-      <img class="hero-media" src="assets/ecosystem-infrastructure.png" alt="" width="1944" height="809">
+      <div class="dataflow-visual" aria-hidden="true">
+        <svg viewBox="0 0 1040 820" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="data-stream-a" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#39c6ca"/><stop offset="1" stop-color="#a8d951"/></linearGradient>
+            <linearGradient id="data-stream-b" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#a8d951"/><stop offset="1" stop-color="#f0b341"/></linearGradient>
+          </defs>
+          <g class="dataflow-grid"><path d="M0 130H1040M0 260H1040M0 390H1040M0 520H1040M0 650H1040M140 0V820M300 0V820M460 0V820M620 0V820M780 0V820M940 0V820"/></g>
+          <g class="dataflow-stream stream-a" stroke="url(#data-stream-a)"><path d="M-40 616C136 616 126 214 318 214S506 574 696 574 842 310 1090 310"/></g>
+          <g class="dataflow-stream stream-b" stroke="url(#data-stream-b)"><path d="M-40 488C146 488 182 350 344 350S518 448 668 448 838 178 1090 178"/></g>
+          <g class="dataflow-stream stream-c"><path d="M-40 698C144 698 226 538 384 538S556 676 724 676 866 514 1090 514"/></g>
+          <g class="dataflow-pulses">
+            <circle cx="127" cy="470" r="7"/><circle cx="318" cy="214" r="10"/><circle cx="502" cy="429" r="7"/><circle cx="696" cy="574" r="10"/><circle cx="870" cy="330" r="7"/>
+            <rect x="335" y="341" width="18" height="18"/><rect x="659" y="439" width="18" height="18"/><rect x="715" y="667" width="18" height="18"/>
+          </g>
+          <g class="dataflow-labels"><text x="302" y="184">STREAM / 01</text><text x="690" y="545">GRAPH / 02</text><text x="808" y="150">VECTOR / 03</text><text x="806" y="648">UPDATE / LIVE</text></g>
+        </svg>
+      </div>
       <div class="hero-shade"></div>
       <div class="hero-copy">
         <p class="signal"><span></span> Intelligent systems ecosystem / 02</p>
