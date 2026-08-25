@@ -18,6 +18,14 @@
       "stage": "PUBLIC INCUBATION"
     },
     {
+      "code": "CONSISTENCY",
+      "name": "Tenet",
+      "url": "https://github.com/intellistream/Tenet",
+      "role": "Agent workspace consistency",
+      "summary": "Versioned premise tracking, stale-read detection, writer attribution, and bounded recovery for parallel coding agents.",
+      "stage": "PRIVATE INCUBATION"
+    },
+    {
       "code": "ANNS",
       "name": "NewGammaFresh",
       "url": "https://github.com/intellistream/NewGammaFresh",
