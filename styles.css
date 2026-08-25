@@ -145,6 +145,8 @@ h1 { margin: 0; font-size: clamp(72px, 11vw, 166px); line-height: .82; }
 .research-card h3 { margin: 18px 0 0; font-size: 24px; }
 .research-card p { margin: 0; color: var(--muted); }
 .research-card-role { margin-top: auto; color: #527616; font-size: 12px; font-weight: 800; }
+.research-card-access { color: #176f72; font: 700 10px ui-monospace, SFMono-Regular, Menlo, monospace; text-transform: uppercase; }
+.research-card.is-unlinked .research-card-access { color: #7b5550; }
 .research-status { grid-column: 1 / -1; margin: 0; padding: 28px; color: var(--muted); }
 .filterbar { margin-bottom: 20px; display: flex; gap: 7px; flex-wrap: wrap; }
 .filter { min-height: 40px; padding: 8px 13px; color: var(--muted); background: transparent; border: 1px solid var(--line); border-radius: 4px; font-size: 13px; font-weight: 800; cursor: pointer; }

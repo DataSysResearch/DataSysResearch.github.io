@@ -27,7 +27,11 @@
       manifest.projects.forEach((project) => {
         const card = document.createElement(project.url ? "a" : "article");
         card.className = `research-card${project.url ? "" : " is-unlinked"}`;
-        if (project.url) card.href = project.url;
+        if (project.url) {
+          card.href = project.url;
+          card.target = "_blank";
+          card.rel = "noopener noreferrer";
+        }
 
         const head = document.createElement("div");
         head.className = "research-card-head";
@@ -37,6 +41,7 @@
         addText(card, "", project.name, "h3");
         addText(card, "", project.summary, "p");
         addText(card, "research-card-role", project.role);
+        addText(card, "research-card-access", project.url ? "Repository ↗" : "Link not public");
         fragment.append(card);
       });
 
