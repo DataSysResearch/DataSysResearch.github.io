@@ -20,15 +20,15 @@
     {
       "code": "CONSISTENCY",
       "name": "Tenet",
-      "url": "https://github.com/intellistream/Tenet",
+      "url": null,
       "role": "Agent workspace consistency",
-      "summary": "Versioned premise tracking, stale-read detection, writer attribution, and bounded recovery for parallel coding agents.",
+      "summary": "Versioned premise tracking, stale-read detection, and writer attribution for parallel coding agents.",
       "stage": "PRIVATE INCUBATION"
     },
     {
       "code": "ANNS",
       "name": "NewGammaFresh",
-      "url": "https://github.com/intellistream/NewGammaFresh",
+      "url": null,
       "role": "Dynamic vector indexes",
       "summary": "Continuous ANNS under update and query pressure, including delete absorption and rebuild boundaries.",
       "stage": "PRIVATE INCUBATION"
@@ -36,17 +36,17 @@
     {
       "code": "TIME",
       "name": "TA-RAG",
-      "url": "https://github.com/intellistream/TA-RAG",
+      "url": null,
       "role": "Temporal retrieval",
-      "summary": "Time-aware retrieval contracts, temporal splits, baselines, and reproducible evaluation.",
+      "summary": "Time-aware retrieval over controlled temporal splits with reproducible evaluation.",
       "stage": "PRIVATE INCUBATION"
     },
     {
       "code": "LIFECYCLE",
       "name": "Temporal RAG",
-      "url": "https://github.com/intellistream/sage-temporal-memory",
+      "url": null,
       "role": "Temporal data lifecycle",
-      "summary": "Temporal visibility, versions, updates, expiry semantics, and matched retrieval evaluation.",
+      "summary": "Temporal visibility, versions, updates, expiry semantics, and retrieval evaluation.",
       "stage": "PRIVATE INCUBATION"
     },
     {
