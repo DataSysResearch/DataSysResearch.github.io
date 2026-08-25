@@ -20,6 +20,7 @@
     </a>
     <nav aria-label="Primary navigation">
       <a href="#flagships">Flagships</a>
+      <a href="#research-portfolio">Research</a>
       <a href="./achievements.html">Achievements</a>
       <a href="./members.html">Members</a>
       <a href="#directory">Repository atlas</a>
@@ -29,7 +30,7 @@
   </header>
   <nav class="mobile-nav" aria-label="Mobile navigation">
     <a class="active" href="#top">Overview</a>
-    <a href="#flagships">Flagships</a>
+    <a href="#research-portfolio">Research</a>
     <a href="./achievements.html">Papers</a>
     <a href="./members.html">Members</a>
     <a href="https://github.com/DataSysResearch">GitHub <span aria-hidden="true">↗</span></a>
@@ -117,6 +118,16 @@
       </div>
     </section>
 
+    <section class="section research-portfolio" id="research-portfolio">
+      <div class="section-head">
+        <div><p class="eyebrow">Evolving-data research</p><h2>Seven questions. One data-systems home.</h2></div>
+        <p>These projects study framework-neutral processing, retrieval, indexing, temporal state, and evaluation. Incubating projects retain their current repositories and access boundaries until they satisfy the DataSys graduation contract.</p>
+      </div>
+      <div class="research-grid" data-research-portfolio data-source="./data/research-portfolio.json">
+        <p class="research-status" data-research-status>Loading the research portfolio…</p>
+      </div>
+    </section>
+
     <section class="section directory" id="directory">
       <div class="section-head">
         <div><p class="eyebrow">Repository atlas</p><h2>Organized by technical role.</h2></div>
@@ -187,6 +198,7 @@
     <div><strong>DataSys</strong><span>Open systems for evolving data.</span></div>
     <nav aria-label="Footer navigation"><a href="./achievements.html">Achievements</a><a href="https://github.com/DataSysResearch">GitHub</a><a href="https://github.com/DataSysResearch/.github/blob/main/SECURITY.md">Security</a><a href="https://github.com/DataSysResearch/.github/blob/main/CONTRIBUTING.md">Contribute</a></nav>
   </footer>
+  <script src="assets/research-portfolio.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

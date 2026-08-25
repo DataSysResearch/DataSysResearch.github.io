@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "projects": [
+    {
+      "code": "SEMANTIC",
+      "name": "Semantic-MR",
+      "url": null,
+      "role": "Semantic and graph processing",
+      "summary": "Deterministic semantic aggregation over telemetry and evolving records.",
+      "stage": "PRIVATE INCUBATION"
+    },
+    {
+      "code": "LINK",
+      "name": "Wiki-Link Retrieval",
+      "url": "https://github.com/RIDE-Lab/wiki-link-retrieval",
+      "role": "Semantic and graph processing",
+      "summary": "Graph-backed retrieval over evolving linked corpora with reproducible corpus and query provenance.",
+      "stage": "PUBLIC INCUBATION"
+    },
+    {
+      "code": "ANNS",
+      "name": "NewGammaFresh",
+      "url": "https://github.com/intellistream/NewGammaFresh",
+      "role": "Dynamic vector indexes",
+      "summary": "Continuous ANNS under update and query pressure, including delete absorption and rebuild boundaries.",
+      "stage": "PRIVATE INCUBATION"
+    },
+    {
+      "code": "TIME",
+      "name": "TA-RAG",
+      "url": "https://github.com/intellistream/TA-RAG",
+      "role": "Temporal retrieval",
+      "summary": "Time-aware retrieval contracts, temporal splits, baselines, and reproducible evaluation.",
+      "stage": "PRIVATE INCUBATION"
+    },
+    {
+      "code": "LIFECYCLE",
+      "name": "Temporal RAG",
+      "url": "https://github.com/intellistream/sage-temporal-memory",
+      "role": "Temporal data lifecycle",
+      "summary": "Temporal visibility, versions, updates, expiry semantics, and matched retrieval evaluation.",
+      "stage": "PRIVATE INCUBATION"
+    },
+    {
+      "code": "GRAPH",
+      "name": "GRACE",
+      "url": "https://github.com/DataSysResearch/GRACE",
+      "role": "Dynamic graph systems",
+      "summary": "Property-guided reconstruction and rebalancing for efficient dynamic graph processing.",
+      "stage": "GRADUATED"
+    },
+    {
+      "code": "BENCH",
+      "name": "BriskSeed",
+      "url": "https://github.com/DataSysResearch/CANDOR-Bench/tree/BriskSeed",
+      "role": "Continuous ANNS evaluation",
+      "summary": "A governed CANDOR-Bench research branch for continuous ANNS seeding and evaluation.",
+      "stage": "GRADUATED BRANCH"
+    }
+  ]
+}
