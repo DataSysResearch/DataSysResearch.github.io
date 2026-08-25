@@ -134,6 +134,18 @@ h1 { margin: 0; font-size: clamp(72px, 11vw, 166px); line-height: .82; }
 .flagship .open { margin-top: auto; padding-top: 28px; color: var(--green); font-size: 13px; font-weight: 800; }
 
 .directory { background: var(--paper); }
+.research-portfolio { background: #e8efea; }
+.research-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.research-card { min-height: 230px; padding: 24px; display: flex; flex-direction: column; gap: 14px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: rgba(255,255,255,.52); text-decoration: none; }
+.research-card:hover { background: var(--white); box-shadow: inset 0 4px var(--green); }
+.research-card.is-unlinked { cursor: default; }
+.research-card.is-unlinked:hover { background: rgba(255,255,255,.52); box-shadow: none; }
+.research-card-head { display: flex; justify-content: space-between; gap: 16px; align-items: start; }
+.research-card-code, .research-card-stage { color: var(--muted); font: 10px ui-monospace, SFMono-Regular, Menlo, monospace; text-transform: uppercase; }
+.research-card h3 { margin: 18px 0 0; font-size: 24px; }
+.research-card p { margin: 0; color: var(--muted); }
+.research-card-role { margin-top: auto; color: #527616; font-size: 12px; font-weight: 800; }
+.research-status { grid-column: 1 / -1; margin: 0; padding: 28px; color: var(--muted); }
 .filterbar { margin-bottom: 20px; display: flex; gap: 7px; flex-wrap: wrap; }
 .filter { min-height: 40px; padding: 8px 13px; color: var(--muted); background: transparent; border: 1px solid var(--line); border-radius: 4px; font-size: 13px; font-weight: 800; cursor: pointer; }
 .filter span { margin-left: 6px; color: inherit; opacity: .7; }
@@ -218,6 +230,7 @@ footer span, footer nav { color: #82918f; }
   .hero { align-content: end; }
   .scope-rail { grid-template-columns: repeat(3,minmax(0,1fr)); }
   .flagship-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .research-grid { grid-template-columns: 1fr; }
   .baseline-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .architecture { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .member-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
